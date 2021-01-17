@@ -23,10 +23,10 @@
 
 // // Работа с числами
 
-let number = 12.2;
+// let number = 12.2;
  
-console.log(Math.round(number));
+// console.log(Math.round(number));
 
-let test = "12.2px"
-console.log(parseInt(test)); // Переводит число в другую систему исчесления. Является глобальной ф-ей
-console.log(parseFloat(test)); // Переводит число в десятичную систему исчесления. Является глобальной ф-ей
+// let test = "12.2px"
+// console.log(parseInt(test)); // Переводит число в другую систему исчесления. Является глобальной ф-ей
+// console.log(parseFloat(test)); // Переводит число в десятичную систему исчесления. Является глобальной ф-ей
