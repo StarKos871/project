@@ -16,10 +16,10 @@ const soldier = {
 const john = Object.create(soldier) //create(Творить) Мы создаем новый обьект Джон, который будет прототипно наследоваться от солдата
 
 
-// const john = { 
-//   health: 50
-// }
+const john = { 
+  health: 50
+}
 
-// // john.__proto__= soldier // Это старая форма записи. С помощью прототипа мы позаимствовали содержимое из другого обьекта
-// Object.setPrototypeOf(john, soldier)// Это новая форма записи. 
-// john.sayHello()
+// john.__proto__= soldier // Это старая форма записи. С помощью прототипа мы позаимствовали содержимое из другого обьекта
+Object.setPrototypeOf(john, soldier)// Это новая форма записи. 
+john.sayHello()

@@ -55,7 +55,7 @@ const personalMovieDB = {
   writeYourGenre: function(){
     for ( let i = 1; i < 2; i++){    
       // genre = prompt(`Ваш любимый жанр фильма под номером ${i}`)
-      genre = prompt(`Введите жанр любимый через запятую`)
+      genre = prompt(`Введите жанр любимый через запятую`).toLowerCase()
       
       if (genre == '' || genre == null) {
         console.log('Вы ввели некорректные данные или вовсе не ввели ни чего');
