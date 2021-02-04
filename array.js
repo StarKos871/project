@@ -1,16 +1,16 @@
 const arr = [1, 23, 85, 7]
-arr.sort(compareNum) // сортировка числового массива по порядку. При помощи фу-ии
-console.log(arr);
-function compareNum(a, b){
-  return a - b
-}
+// arr.sort(compareNum) // сортировка числового массива по порядку. При помощи фу-ии
+// console.log(arr);
+// function compareNum(a, b){
+//   return a - b
+// }
 
 // arr.pop()   // удаляет последний элемент в массиве
 // arr.push(19) // добавляет элемент
 //  console.log(arr);
 
 // for (i = 0; i < arr.length; i++){
-//   console.log(arr[i]);
+//   console.log(arr[i]);// выведет как число
 // }
 
 // for (let value of arr){

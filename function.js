@@ -28,7 +28,7 @@
 // //сродни переменной
 
 // let logger = function(){
-//   console.log('I Los');
+//   console.log('I Kos');
 // }
 // // logger()
 
