@@ -40,3 +40,13 @@
 //   }
 //   console.log(i);
 // }
+
+
+function loadScript (src){
+  const script = document.createElement('script')// создаем переменную и в html док-е создаем тэг script
+  script.src = src // тут мы создаем путь где будет располагаться этот файл
+  script.async = false // ассинхронность выставлена так потому что нам нужен порядок загрузки файлов последовательный. Если это убрать, то будет показан тот файл первым, который легче весит
+  document.body.append(script) // добавляем наш файл в конец body
+}
+
+loadScript('script.js') // вызываем ф-ию и передаем путь где она будет находиться
