@@ -82,3 +82,15 @@ button {
 	margin-top: 30px;
 	color: #fff;
 }
+
+.blue {
+  background-color:blue
+}
+.red {
+  background: red;
+}
+
+.btn-clock {
+  background-color:cadetblue;
+  padding: 10px 5px;
+}
