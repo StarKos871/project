@@ -5,9 +5,18 @@ body {
 
 
 .box {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  border: 2px solid red;
+  margin: 50px;
+  
+}
+.cube {
+  position: absolute;
   width: 150px;
   height: 150px;
-  background-color: red;
+  background-color: blue;
 }
 button {
 	width: 80px;

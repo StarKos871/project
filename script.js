@@ -1,3 +1,46 @@
+const btn = document.querySelector('.btn')
+let timer,
+    i = 0
+
+function myAnimation(){ // создаем ф-ию для анимации
+  const elem = document.querySelector('.cube') // получаем э-нт с классом cube
+  let pos = 0 // задаем переменной значение 0 для точки старта
+
+  const id = setInterval(frame, 10) //
+  function frame(){ // 
+    if(pos === 300){
+      clearInterval(id)
+    }else{
+      pos++
+      elem.style.top = pos + "px"
+      elem.style.left = pos + "px"
+    }
+  }
+}
+btn.addEventListener('click', myAnimation)
+// const timer = setTimeout(function(){ // setTimeout это ф-ия для того что бы вызывать действия через определенное время
+//   alert('Hello Kos')
+// }, 2000)
+
+// btn.addEventListener('click', () => {
+//   timer = setInterval(logger, 1000)
+// })
+
+
+
+// function logger() {
+//   if(i === 3){
+//     clearInterval(timer) // очищение от setTimeout
+  
+//   }
+//   alert('Hello Kos')
+//   i++
+// }
+// let id = setTimeout(function log() {
+//   console.log('Hello');
+//   id = setTimeout(log, 500)
+// }, 500)
+
 // const  num = 50;
 // // Тернарный  оператор: форма записи внизу. Если переменная = чему-то, то (?) какое то действие,
 // //  иначе (:) другое
@@ -70,18 +113,18 @@ wrapper = document.querySelector('.btn-clock')
 //   btns[1].classList.toggle('red') // выполняется тоже самое что и выше. Но в больших проектах не всегда может это работать
 // })
 
-wrapper.addEventListener('click', (e) => {
-  if (e.target && e.target.tagName == 'BUTTON') {
-    console.log('Hello')
-  }
-})
-wrapper.addEventListener('click', (e) => {
-  if (e.target && e.target.matches('button.red')) {
-    // это более продвинутый метод. Позволяет определить тэги с классами и повесить на них какое то действие
-    console.log('Hello')
-  }
-})
+// wrapper.addEventListener('click', (e) => {
+//   if (e.target && e.target.tagName == 'BUTTON') {
+//     console.log('Hello')
+//   }
+// })
+// wrapper.addEventListener('click', (e) => {
+//   if (e.target && e.target.matches('button.red')) {
+//     // это более продвинутый метод. Позволяет определить тэги с классами и повесить на них какое то действие
+//     console.log('Hello')
+//   }
+// })
 
-const btn = document.createElement('button') // создает новый элемент с тэгом button
-btn.classList.add('red') // в нем создаем класс red
-wrapper.append(btn) // создаем эту кнопку в родителе
+// const btn = document.createElement('button') // создает новый элемент с тэгом button
+// btn.classList.add('red') // в нем создаем класс red
+// wrapper.append(btn) // создаем эту кнопку в родителе
