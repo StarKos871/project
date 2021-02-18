@@ -8,9 +8,14 @@ body {
   position: relative;
   width: 450px;
   height: 450px;
+  overflow: scroll;
   border: 2px solid red;
-  margin: 50px;
+  margin: auto;
   
+}
+.button {
+  display: block;
+  margin: 25px auto;
 }
 .cube {
   position: absolute;

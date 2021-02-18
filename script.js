@@ -1,23 +1,26 @@
-const btn = document.querySelector('.btn')
-let timer,
-    i = 0
 
-function myAnimation(){ // создаем ф-ию для анимации
-  const elem = document.querySelector('.cube') // получаем э-нт с классом cube
-  let pos = 0 // задаем переменной значение 0 для точки старта
 
-  const id = setInterval(frame, 10) //
-  function frame(){ // 
-    if(pos === 300){
-      clearInterval(id)
-    }else{
-      pos++
-      elem.style.top = pos + "px"
-      elem.style.left = pos + "px"
-    }
-  }
-}
-btn.addEventListener('click', myAnimation)
+// const btn = document.querySelector('.btn')
+// let timer,
+//     i = 0
+
+// function myAnimation(){ // создаем ф-ию для анимации
+//   const elem = document.querySelector('.cube') // получаем э-нт с классом cube
+//   let pos = 0 // задаем переменной значение 0 для точки старта
+
+//   const id = setInterval(frame, 10) //
+//   function frame(){ // создаем функцию кадр
+//     if(pos === 300){ // если позиция = 300
+//       clearInterval(id)// удаляем интервал 
+//     }else{
+//       pos++ // позиция увеличивается на 1
+//       elem.style.top = pos + "px" // задаем переменной elem класс top
+//       elem.style.left = pos + "px" // задаем переменной elem класс left
+//     }
+//   }
+// }
+// btn.addEventListener('click', myAnimation) // слушаем клик для кнопки и после запускаем ф-ию
+
 // const timer = setTimeout(function(){ // setTimeout это ф-ия для того что бы вызывать действия через определенное время
 //   alert('Hello Kos')
 // }, 2000)
